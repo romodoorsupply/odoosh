@@ -7,7 +7,7 @@
             href="https://unpkg.com/aos@2.3.4/dist/aos.css"/-->
 
      <!--Drawer CSS -->
-      <script src="/website_variant_dropdown/static/src/js/quote_cart.js"/>
+      <script src="/website_variant_dropdown/static/src/js/variant_dropdown.js"/>
      
       <!-- Init Script -->
     </xpath>
