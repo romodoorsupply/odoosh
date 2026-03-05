@@ -10,12 +10,14 @@
         "website_sale"
     ],
 
-    "data": [],
+    "data": [
+        "views/variant_scripts.xml",
+    ],
 
     "assets": {
         "web.assets_frontend": [
             "website_variant_dropdown/static/src/scss/variant.scss",
-            "website_variant_dropdown/static/src/js/variant_dropdown.js",
+            #"website_variant_dropdown/static/src/js/variant_dropdown.js",
         ],
     },
 

@@ -1,0 +1,15 @@
+<odoo>
+  <template id="variants_custom_scripts" inherit_id="website.layout">
+    <xpath expr="//body" position="inside">
+
+    <!-- AOS CSS -->
+      <!--link rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"/-->
+
+     <!--Drawer CSS -->
+      <script src="/website_variant_dropdown/static/src/js/quote_cart.js"/>
+     
+      <!-- Init Script -->
+    </xpath>
+  </template>
+</odoo>
