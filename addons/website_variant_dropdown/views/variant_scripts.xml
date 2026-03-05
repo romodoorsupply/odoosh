@@ -1,0 +1,14 @@
+<odoo>
+  <template id="variants_custom_scripts" inherit_id="website.layout">
+
+    <xpath expr="//body" position="inside">
+
+      <link rel="stylesheet"
+            href="/website_variant_dropdown/static/src/css/variant.css"/>
+
+      <script src="/website_variant_dropdown/static/src/js/variant_dropdown.js"/>
+
+    </xpath>
+
+  </template>
+</odoo>
