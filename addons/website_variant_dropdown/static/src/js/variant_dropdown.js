@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("variant dropdown module loaded");
 
     const attributes = document.querySelectorAll(".variant_attribute");
 
