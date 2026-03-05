@@ -1,0 +1,21 @@
+/* hide original radio variants */
+
+.variant_attribute > ul {
+    display: none !important;
+}
+
+/* dropdown spacing */
+
+.variant-dropdown{
+    margin-bottom:20px;
+}
+
+/* dropdown styling */
+
+.variant-dropdown select{
+    width:100%;
+    max-width:350px;
+    padding:8px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
