@@ -15,10 +15,7 @@
     ],
 
     "assets": {
-        "web.assets_frontend": [
-            "website_variant_dropdown/static/src/scss/variant.scss",
-            #"website_variant_dropdown/static/src/js/variant_dropdown.js",
-        ],
+        "web.assets_frontend": [],
     },
 
     "installable": True,

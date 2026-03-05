@@ -4,13 +4,16 @@
 display:none;
 }*/
 
-.variant_attribute input[type="radio"]{
- display:none;
+li[name="variant_attribute"]> ul{
+    display:none!important;
 }
+
+/*.variant_attribute input[type="radio"]{
+    display: none !important;
+}*/
 
 
 /* dropdown style */
-
 .variant-dropdown{
 margin-bottom:20px;
 }
