@@ -1,8 +1,13 @@
 /* hide radio variant UI */
 
-.js_add_cart_variants ul{
+/*.js_add_cart_variants ul{
 display:none;
+}*/
+
+.variant_attribute input[type="radio"]{
+ display:none;
 }
+
 
 /* dropdown style */
 
