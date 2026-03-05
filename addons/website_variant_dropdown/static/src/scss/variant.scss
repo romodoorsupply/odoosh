@@ -1,0 +1,19 @@
+/* hide radio variant UI */
+
+.js_add_cart_variants ul{
+display:none;
+}
+
+/* dropdown style */
+
+.variant-dropdown{
+margin-bottom:20px;
+}
+
+.variant-dropdown select{
+width:100%;
+max-width:350px;
+padding:8px;
+border-radius:6px;
+border:1px solid #ccc;
+}
