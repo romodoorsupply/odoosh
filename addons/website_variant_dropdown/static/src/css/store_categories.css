@@ -10,7 +10,7 @@
 
 .door_categories_row{
     display:flex !important;
-    flex-wrap:wrap !important;
+    /*flex-wrap:wrap !important;*/
     gap:20px;
 }
 
@@ -84,13 +84,13 @@
         padding:10px;
     }
 
+
+
+@media (max-width:1024px){
     .door_category_image{
-        width:70px !important;
-        height:70px !important;
+        width:270px !important;
+        height:120px !important;
     }
-
-}
-
 
 /* ===============================
    MOBILE (≤768px)
@@ -109,13 +109,6 @@
         flex-shrink:0;
     }
 
-    .door_category_image{
-        width:60px !important;
-        height:60px !important;
-    }
-
-}
-
 
 /* ===============================
    SMALL MOBILE (≤480px)
@@ -132,13 +125,15 @@
         padding:8px;
     }
 
-    .door_category_image{
-        width:50px !important;
-        height:50px !important;
-    }
-
     .door_category_name{
         font-size:12px;
     }
 
+      .door_category_image{
+        width:120px !important;
+    }
+
+    }
+   }
+  }
 }
