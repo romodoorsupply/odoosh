@@ -11,6 +11,7 @@
     ],
 
     "data": [
+        'views/store_categories.xml',
         "views/variant_scripts.xml",
     ],
 

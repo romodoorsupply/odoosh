@@ -1,0 +1,29 @@
+#door_categories_block{
+    margin-bottom:25px;
+}
+
+.door_categories_row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:flex-start;
+}
+
+.door_category_card{
+    text-align:center;
+}
+
+.door_category_card a{
+    text-decoration:none;
+}
+
+.category_image{
+    height:110px;
+    object-fit:contain;
+}
+
+.category_name{
+    font-size:14px;
+    font-weight:600;
+    color:#333;
+}
