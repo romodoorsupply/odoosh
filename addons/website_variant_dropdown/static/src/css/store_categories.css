@@ -5,6 +5,11 @@
     margin-bottom:20px;
 }
 
+#door_categories_block img, #door_categories_block_wrapper img{
+    margin-bottom: 12px!important;
+}
+
+
 /* ===== CATEGORY ROW ===== */
 
 .door_categories_row{
@@ -23,7 +28,7 @@
     align-items: center!important;
     justify-content: center!important;
 
-    width: 150px!important;
+    width: 250px!important;
     padding:12px;
 
     text-decoration:none;
@@ -66,7 +71,7 @@
 
 .door_category_image{
 
-    width:150px !important;
+    width:250px !important;
     height:150px !important;
 
     object-fit:cover;
@@ -99,15 +104,12 @@
 @media (max-width:1024px){
 
     #door_categories_block .door_category_card{
-        width:130px;
+        width:200px;
         padding:10px;
     }
 
-
-
-@media (max-width:1024px){
     #door_categories_block .door_category_image{
-        width:120px !important;
+        width:200px !important;
         height:120px !important;
     }
 
@@ -129,8 +131,8 @@
     }
 
     #door_categories_block .door_category_image{
-        width:80px !important;
-        height:80px !important;
+        width:170px !important;
+        height:100px !important;
     }
 
 
@@ -154,10 +156,9 @@
     }
 
      #door_categories_block .door_category_image{
-            width:70px !important;
+            width:100px !important;
         }
 
     }
    }
   }
-}
