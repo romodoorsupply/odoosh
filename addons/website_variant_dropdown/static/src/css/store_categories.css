@@ -1,41 +1,86 @@
+/* CATEGORY WRAPPER */
+
 #door_categories_block{
-    margin-bottom:18px;
+    width:100%;
+    margin-bottom:20px;
 }
+
+/* CATEGORY ROW */
 
 .door_categories_row{
     display:flex;
-    gap:12px;
     flex-wrap:wrap;
+    gap:16px;
+    align-items:flex-start;
 }
+
+/* CATEGORY CARD */
 
 .door_category_card{
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
 
-    background:#f4f4f4;
+    width:140px;
+    min-height:120px;
+
+    padding:12px;
+
+    background:#f5f5f5;
     border-radius:8px;
 
-    padding:12px 14px;
-
     text-decoration:none;
-    min-width:120px;
+
+    transition:all .2s ease;
 }
+
+/* HOVER EFFECT */
 
 .door_category_card:hover{
     background:#ececec;
+    transform:translateY(-2px);
 }
 
+/* CATEGORY IMAGE */
+
 .door_category_image{
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
+
     object-fit:cover;
-    margin-bottom:6px;
+
+    margin-bottom:8px;
+
+    border-radius:6px;
 }
+
+/* CATEGORY NAME */
 
 .door_category_name{
     font-size:13px;
     font-weight:600;
     color:#333;
     text-align:center;
+    line-height:1.2;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+    .door_categories_row{
+        gap:10px;
+    }
+
+    .door_category_card{
+        width:110px;
+        padding:10px;
+    }
+
+    .door_category_image{
+        width:48px;
+        height:48px;
+    }
+
 }
