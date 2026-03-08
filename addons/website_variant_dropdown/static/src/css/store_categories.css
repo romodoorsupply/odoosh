@@ -10,7 +10,7 @@
 
 .door_categories_row{
     display:flex !important;
-    /*flex-wrap:wrap !important;*/
+    flex-wrap: nowrap !important;
     gap:20px;
 }
 
@@ -99,7 +99,7 @@
 @media (max-width:768px){
 
     .door_categories_row{
-        flex-wrap:nowrap;
+        flex-wrap:nowrap!important;
         overflow-x:auto;
         padding-bottom:10px;
     }
