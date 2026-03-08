@@ -1,86 +1,144 @@
-/* CATEGORY WRAPPER */
+/* ===== CATEGORY WRAPPER ===== */
 
 #door_categories_block{
     width:100%;
     margin-bottom:20px;
 }
 
-/* CATEGORY ROW */
+
+/* ===== CATEGORY ROW ===== */
 
 .door_categories_row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:16px;
-    align-items:flex-start;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:20px;
 }
 
-/* CATEGORY CARD */
+
+/* ===== CATEGORY CARD ===== */
 
 .door_category_card{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
 
-    width:140px;
-    min-height:120px;
+    display:flex !important;
+    flex-direction: column!important;
+    align-items: center!important;
+    justify-content: center!important;
 
+    width: 150px!important;
     padding:12px;
+
+    text-decoration:none;
 
     background:#f5f5f5;
     border-radius:8px;
 
-    text-decoration:none;
-
     transition:all .2s ease;
 }
 
-/* HOVER EFFECT */
+
+/* ===== HOVER ===== */
 
 .door_category_card:hover{
     background:#ececec;
     transform:translateY(-2px);
 }
 
-/* CATEGORY IMAGE */
+
+/* ===== IMAGE ===== */
 
 .door_category_image{
-    width:60px;
-    height:60px;
+
+    width:80px !important;
+    height:80px !important;
 
     object-fit:cover;
 
-    margin-bottom:8px;
+    display:block;
 
-    border-radius:6px;
+    margin-bottom:8px;
 }
 
-/* CATEGORY NAME */
+
+/* ===== NAME ===== */
 
 .door_category_name{
+
+    display:block;
+
     font-size:13px;
     font-weight:600;
-    color:#333;
+
     text-align:center;
-    line-height:1.2;
+    color:#333;
 }
 
-/* MOBILE RESPONSIVE */
+
+/* ===============================
+   TABLET (≤1024px)
+   =============================== */
+
+@media (max-width:1024px){
+
+    .door_category_card{
+        width:130px;
+        padding:10px;
+    }
+
+    .door_category_image{
+        width:70px !important;
+        height:70px !important;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE (≤768px)
+   =============================== */
 
 @media (max-width:768px){
+
+    .door_categories_row{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding-bottom:10px;
+    }
+
+    .door_category_card{
+        width:110px;
+        flex-shrink:0;
+    }
+
+    .door_category_image{
+        width:60px !important;
+        height:60px !important;
+    }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+   =============================== */
+
+@media (max-width:480px){
 
     .door_categories_row{
         gap:10px;
     }
 
     .door_category_card{
-        width:110px;
-        padding:10px;
+        width:95px;
+        padding:8px;
     }
 
     .door_category_image{
-        width:48px;
-        height:48px;
+        width:50px !important;
+        height:50px !important;
+    }
+
+    .door_category_name{
+        font-size:12px;
     }
 
 }
