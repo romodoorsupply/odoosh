@@ -7,10 +7,10 @@
           inherit_id="website_sale.products"
           name="Store Categories Block">
 
-    <!-- insert BEFORE the shop header -->
+    <!-- Insert categories before shop header -->
     <xpath expr="//div[@id='products_grid']/header" position="before">
 
-        <!-- fetch categories -->
+        <!-- Fetch categories -->
         <t t-set="store_cats"
            t-value="request.env['product.public.category'].search([
                 ('name','in',['Residential Doors','Commercial Doors'])
@@ -22,6 +22,7 @@
 
                 <t t-foreach="store_cats" t-as="cat">
 
+                    <!-- CLICKABLE CATEGORY -->
                     <a t-att-href="'/shop/category/%s' % cat.id"
                        class="door_category_card">
 
