@@ -3,47 +3,35 @@
 
 <data>
 
-<!-- Insert categories ABOVE product grid -->
-
 <template id="store_categories_block"
           inherit_id="website_sale.products"
           name="Store Categories Block">
 
-    <xpath expr="//div[@id='products_grid']" position="inside">
+    <!-- insert BEFORE the shop header -->
+    <xpath expr="//div[@id='products_grid']/header" position="before">
 
-        <!-- Fetch categories -->
+        <!-- fetch categories -->
         <t t-set="store_cats"
            t-value="request.env['product.public.category'].search([
-                ('name', 'in', [
-                    'Residential Doors',
-                    'Commercial Doors'
-                ])
+                ('name','in',['Residential Doors','Commercial Doors'])
            ])"/>
 
-        <!-- Wrapper -->
-        <div id="door_categories_block" class="container my-4">
+        <div id="door_categories_block">
 
-            <div class="row door_categories_row">
+            <div class="door_categories_row">
 
                 <t t-foreach="store_cats" t-as="cat">
 
-                    <div class="col-lg-2 col-md-3 col-6 text-center door_category_card">
+                    <a t-att-href="'/shop/category/%s' % cat.id"
+                       class="door_category_card">
 
-                        <a t-att-href="'/shop/category/%s' % cat.id"
-                           class="door-category-link">
+                        <img t-att-src="'/web/image/product.public.category/%s/image_512' % cat.id"
+                             class="door_category_image"/>
 
-                            <img t-att-src="'/web/image/product.public.category/%s/image_1024' % cat.id"
-                                 class="img-fluid category_image"/>
+                        <span class="door_category_name"
+                              t-esc="cat.name"/>
 
-                            <div class="category_name mt-2">
-
-                                <span t-esc="cat.name"/>
-
-                            </div>
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </t>
 
