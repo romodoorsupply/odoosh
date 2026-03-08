@@ -48,8 +48,8 @@
 
 .door_category_image{
 
-    width:80px !important;
-    height:80px !important;
+    width:150px !important;
+    height:150px !important;
 
     object-fit:cover;
 
@@ -88,7 +88,7 @@
 
 @media (max-width:1024px){
     .door_category_image{
-        width:270px !important;
+        width:120px !important;
         height:120px !important;
     }
 
@@ -107,6 +107,11 @@
     .door_category_card{
         width:110px;
         flex-shrink:0;
+    }
+
+    .door_category_image{
+        width:80px !important;
+        height:80px !important;
     }
 
 
@@ -130,8 +135,8 @@
     }
 
       .door_category_image{
-        width:120px !important;
-    }
+            width:70px !important;
+        }
 
     }
    }
