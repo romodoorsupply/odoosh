@@ -11,18 +11,20 @@
         <xpath expr="//div[@id='products_grid']/header" position="before">
 
             <!-- 1️⃣ STORE PAGE ONLY -->
-            <t t-if="request.httprequest.path == '/shop'">
-
+            <t t-if="request.httprequest.path == '/shop'">                
+                    <!-- Fetch categories -->
                 <t t-set="store_cats"
                 t-value="request.env['product.public.category'].search([
                         ('name','in',['Residential Doors','Commercial Doors'])
                 ])"/>
 
                 <div id="door_categories_block">
+
                     <div class="door_categories_row">
 
                         <t t-foreach="store_cats" t-as="cat">
 
+                            <!-- CLICKABLE CATEGORY -->
                             <a t-att-href="'/shop/category/%s' % cat.id"
                             class="door_category_card">
 
@@ -37,14 +39,14 @@
                         </t>
 
                     </div>
-                </div>
 
+                </div>
             </t>
 
             <!-- 2️⃣ CATEGORY PAGE -->
             <t t-elif="category">
 
-                <div id="door_categories_block">
+                <div id="door_categories_block_wrapper">
                     <div class="door_categories_row">
 
                         <a t-att-href="'/shop/category/%s' % category.id"
