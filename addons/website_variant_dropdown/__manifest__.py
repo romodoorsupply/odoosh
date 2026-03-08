@@ -11,11 +11,14 @@
     ],
 
     "data": [
+        'views/store_categories.xml',
         "views/variant_scripts.xml",
     ],
 
     "assets": {
-        "web.assets_frontend": [],
+        "web.assets_frontend": [
+             "website_variant_dropdown/static/src/scss/store_categories.scss",
+        ],
     },
 
     "installable": True,

@@ -1,0 +1,143 @@
+/* ===== CATEGORY WRAPPER ===== */
+
+#door_categories_block, #door_categories_block_wrapper{
+    width:100%;
+    margin-bottom:20px;
+}
+
+/* ===== CATEGORY ROW ===== */
+
+.door_categories_row{
+    display:flex !important;
+    flex-wrap: nowrap !important;
+    gap:20px;
+}
+
+
+/* ===== CATEGORY CARD ===== */
+
+#door_categories_block .door_category_card{
+
+    padding:12px;
+
+    text-decoration:none;
+
+    background:#f5f5f5;
+    border-radius:8px;
+
+    transition:all .2s ease;
+}
+
+
+#door_categories_block_wrapper .door_category_card{
+    padding:12px;
+
+    text-decoration:none;
+
+    background:#f5f5f5;
+    border-radius:8px;
+
+    transition:all .2s ease;
+}
+
+
+/* ===== HOVER ===== */
+
+.door_category_card:hover{
+    background:#ececec;
+    transform:translateY(-2px);
+}
+
+
+/* ===== IMAGE ===== */
+
+#door_categories_block .door_category_image{
+
+    width:350px;
+    height:170px;
+
+    object-fit:cover;
+
+    display:block;
+    margin-right:7px;
+}
+
+#door_categories_block_wrapper .door_category_image{
+
+    width:700px;
+    height:170px;
+
+    object-fit:cover;
+
+    display:block;
+    margin-right:7px;
+}
+
+/* ===============================
+   TABLET (≤1024px)
+   =============================== */
+
+@media (max-width:1024px){
+    #door_categories_block .door_category_image{
+        width:300px;
+        height:150px;
+    }
+
+/* ===============================
+   MOBILE (≤768px)
+   =============================== */
+
+@media (max-width:768px){
+
+    .door_categories_row{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding-bottom:10px;
+    }
+
+    /*.door_category_card{
+        width:110px;
+        flex-shrink:0;
+    }*/
+
+    #door_categories_block .door_category_image{
+        width:250px;
+    }
+
+    #door_categories_block_wrapper .door_category_image{
+
+        width:450px;
+        height:170px;
+
+        object-fit:cover;
+
+        display:block;
+        margin-right:7px;
+    }
+
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+   =============================== */
+
+@media (max-width:480px){
+
+    .door_categories_row{
+        gap:10px;
+    }
+
+    .door_category_name{
+        font-size:12px;
+    }
+
+     #door_categories_block .door_category_image{
+        width:200px;
+    }
+
+    #door_categories_block_wrapper .door_category_image{
+        width:300px;
+    }
+
+    }
+   }
+  }

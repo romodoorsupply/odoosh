@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<data>
+
+<template id="store_categories_block"
+          inherit_id="website_sale.products"
+          name="Store Categories Block">
+
+        <!-- Insert categories before shop header -->
+        <xpath expr="//div[@id='products_grid']/header" position="before">
+
+            <!-- 1️⃣ STORE PAGE ONLY -->
+            <t t-if="request.httprequest.path == '/shop'">                
+                    <!-- Fetch categories -->
+                <t t-set="store_cats"
+                t-value="request.env['product.public.category'].search([
+                        ('name','in',['Residential Doors','Commercial Doors'])
+                ])"/>
+
+                <div id="door_categories_block">
+
+                    <div class="door_categories_row">
+
+                        <t t-foreach="store_cats" t-as="cat">
+
+                            <!-- CLICKABLE CATEGORY -->
+                            <!--a t-att-href="'/shop/category/%s' % cat.id"
+                            class="door_category_card"-->
+
+                                <img t-att-src="'/web/image/product.public.category/%s/image_512' % cat.id"
+                                    class="door_category_image"/>
+
+                                <!--span class="door_category_name"
+                                    t-esc="cat.name"/-->
+
+                            <!--/a-->
+
+                        </t>
+
+                    </div>
+
+                </div>
+            </t>
+
+            <!-- 2️⃣ CATEGORY PAGE -->
+            <t t-elif="category">
+
+                <div id="door_categories_block_wrapper">
+                    <div class="door_categories_row">
+
+                        <a t-att-href="'/shop/category/%s' % category.id"
+                        class="door_category_card">
+
+                            <img t-if="category.image_512"
+                                t-att-src="'/web/image/product.public.category/%s/image_512' % category.id"
+                                class="door_category_image"/>
+
+                            <!--span class="door_category_name"
+                                t-esc="category.name"/-->
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </t>
+
+            <!-- 3️⃣ PRODUCT PAGE OR OTHER -->
+            <t t-else="">
+                <!-- Do nothing -->
+            </t>
+
+        </xpath>
+</template>
+
+</data>
+
+</odoo>

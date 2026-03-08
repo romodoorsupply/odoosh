@@ -5,7 +5,7 @@
 
       <link rel="stylesheet"
             href="/website_variant_dropdown/static/src/css/variant.css"/>
-
+     
       <script src="/website_variant_dropdown/static/src/js/variant_dropdown.js"/>
 
     </xpath>
