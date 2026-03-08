@@ -31,8 +31,8 @@
                                 <img t-att-src="'/web/image/product.public.category/%s/image_512' % cat.id"
                                     class="door_category_image"/>
 
-                                <span class="door_category_name"
-                                    t-esc="cat.name"/>
+                                <!--span class="door_category_name"
+                                    t-esc="cat.name"/-->
 
                             </a>
 
