@@ -25,8 +25,8 @@
                         <t t-foreach="store_cats" t-as="cat">
 
                             <!-- CLICKABLE CATEGORY -->
-                            <a t-att-href="'/shop/category/%s' % cat.id"
-                            class="door_category_card">
+                            <!--a t-att-href="'/shop/category/%s' % cat.id"
+                            class="door_category_card"-->
 
                                 <img t-att-src="'/web/image/product.public.category/%s/image_512' % cat.id"
                                     class="door_category_image"/>
@@ -34,7 +34,7 @@
                                 <!--span class="door_category_name"
                                     t-esc="cat.name"/-->
 
-                            </a>
+                            <!--/a-->
 
                         </t>
 
